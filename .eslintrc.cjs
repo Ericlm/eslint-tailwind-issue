@@ -9,7 +9,15 @@ module.exports = {
     '@vue/eslint-config-typescript',
     'plugin:tailwindcss/recommended',
   ],
+  
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+
+  overrides: [
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+    },
+  ],
 }
