@@ -14,7 +14,7 @@ const is = true
     </div>
   </header>
 
-  <main>
+  <main :class="{'text-yepee': is}">
     <TheWelcome />
   </main>
 </template>
